@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Didact';
+    src: url('../../../public/DidactGothic-Regular.ttf');
+  }
+:root{
+    --color-bg-dark: #192a33;
+    --color-bg-light: #1f3640;
+    --color-gray: #a8bec9;
+    --color-gray-dark: #7a8991;
+    --color-yellow: #f2b238;
+    --color-yellow-dark: #cd8d16;
+    --color-blue: #30c4be;
+    --color-blue-dark: #128c89;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+.Home-container{
+    background-color: var(--color-bg-dark);
+    width: 100%;
+    height: 100%;
+    /* padding: 1rem; */
+}
+.Header-panel{
+    display: flex;
+    width: 100%;
+    padding: 0.8rem;
+    margin-left: 1.2rem;
+}
+.Title-logo-header{
+    color: var(--color-gray);
+    width: 70%;
+    
+}
+.Title-logo-header div{
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-family: Didact;
+    font-weight: bold;
+    margin-left: 1.2rem;
+}
+
+.btn-nav-header{
+    
+    margin-top: 1.5rem;
+    border: 0.8px;
+    width: 7rem;
+    height: 2.6rem;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.4rem;
+    border: 2px solid white;
+    color: white;
+}
+.link-style-header{
+    text-decoration: none;
+    color: var(--color-bg-dark);
+    font-size: 1.2rem;
+    font-family: Didact;
+    font-weight: bold;
+}
+.btn-nav-header:hover{
+    background-color: var(--color-bg-dark);
+    
+}
+.link-style-header:hover{
+    color: white;
+}
+.part1-header-body{
+    /* border-radius: 1.4rem; */
+    width: 100%;
+    height: 20rem;
+    background-color: white;
+    display: flex;
+    
+}
+.part1-header-body img{
+    margin-top: 3.7rem;
+    margin-left: 2rem;
+    
+}
+.desc-panel-body1{
+    width: 50%;
+    
+}
+.desc-panel-body2{
+    width: 50%;
+}
+
+.star-desc-panel label{
+    font-family: Didact;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-bg-dark);
+}
