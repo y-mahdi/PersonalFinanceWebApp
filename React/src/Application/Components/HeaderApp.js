@@ -1,5 +1,6 @@
 import '../Style/application.css';
 import creditcard from '../../Icons/creditcard.svg';
+import history from '../../Icons/history.svg';
 import plusicon from '../../Icons/plus.svg';
 import AddSpendPopUp from './AddSpendPopUp';
 import {useState,useEffect} from 'react';
@@ -21,6 +22,10 @@ export default function HeaderApp() {
             }}>
                 <img src={plusicon} alt="plus icon" width="20px"/>
                 Add a Spend
+            </button>
+            <button className='btn-history'>
+                <img src={history} alt='history icon' width="20px" />
+                 History
             </button>
             {AddSpendPopUp(open,closeAddPopUp)}
         </div>

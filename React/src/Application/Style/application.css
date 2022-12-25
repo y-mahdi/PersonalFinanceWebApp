@@ -31,18 +31,33 @@ html {
     top: 10px;
     right: 10px;
     font-size: 1rem;
-    border-radius: 10px;
-    background-color: var(--color-gray);
+    border: none;
+    background: none;
     padding: 5px;
     font-family: Didact;
-    color: var(--color-bg-dark);
+    color: var(--color-gray);
     border: none;
 }
 .btn-add-spent img{
     position: relative;
     top: 3px;
 }
-
+.btn-history{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    padding: 5px;
+    font-family: Didact;
+    color: var(--color-gray);
+    border: none;
+}
+.btn-history img{
+    position: relative;
+    top: 3px;
+}
 
 /*add pop up*/
 
@@ -118,14 +133,56 @@ html {
     width: 500px;
 } */
 .donut-charts-app{
+    margin-top: 10px;
+    margin-right: 10px;
     padding: 20px;
     background-color: var(--color-blue-dark);
     width: 400px;
     border-radius: 10px;
 }
 #title-donut-chart{
-    text-align: center;
+    /* text-align: center; */
     font-family: Didact;
     color: white;
     font-size: 1rem;
+    /* position: relative;
+    top: 20px; */
+}
+#title-area-chart{
+    /* text-align: center; */
+    font-family: Didact;
+    color: white;
+    font-size: 1rem;
+    /* position: relative;
+    top: 20px; */
+}
+.part1-charts-panel{
+    display: flex;
+    justify-content: center;
+}
+.area-charts-app{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: var(--color-blue-dark);
+    width: 700px;
+    border-radius: 10px;
+}
+.donutchart{
+    position: relative;
+    top: 50px;
+}
+.part2-charts-panel{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.area1-charts-app{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: var(--color-blue-dark);
+    width: 1110px;
+    border-radius: 10px;
+
 }
