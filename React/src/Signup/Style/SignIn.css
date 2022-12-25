@@ -81,3 +81,10 @@ html {
     background: none;
     color: var(--color-gray);
 }
+.footer-panel-cotainer{
+    min-height: 6.8rem;
+    padding: 20px;
+    background-color: var(--color-bg-light);
+    font-family: Didact;
+    color: var(--color-gray);
+}
