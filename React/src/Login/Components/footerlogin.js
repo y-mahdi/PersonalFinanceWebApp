@@ -1,12 +1,12 @@
 
 
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 export default function FooterLogin() {
     return (
         <div className="footer-login-panel">
-            <div>
-                Developed By Youssef Mahdi
+            <div id="title-footer">
+                Developed By Youssef Mahdi -ISIL
             </div>
         </div>
     )

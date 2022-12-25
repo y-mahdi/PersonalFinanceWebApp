@@ -61,6 +61,11 @@ html {
     color: var(--color-bg-dark);
     font-size: 1rem;
 }
+.form-container-login button:hover{
+    color:var(--color-gray);
+    background: none;
+    font-weight: bold;
+}
 .signup-message-panel{
     text-align: center;
     font-family: Didact;
@@ -71,8 +76,16 @@ html {
     color: white;
     font-weight: bold;
 }
+.signup-message-panel #link:hover{
+    color: var(--color-gray);
+}
 .footer-login-panel{
-    border-top: 4px solid white;
+    /* border-top: 4px solid var(--color-gray); */
     height: 150px;
     padding: 20px;
+    background-color: var(--color-bg-light);
+}
+.footer-login-panel #title-footer{
+    font-family: Didact;
+    color: var(--color-gray);
 }
