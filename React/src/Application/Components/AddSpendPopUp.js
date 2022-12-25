@@ -15,9 +15,7 @@ export default function AddSpendPopUp(onOpen,onClose) {
                         <option value={'others'}>Others</option>
                     </select><br/>
                     <button>Add</button><br />
-                    <button onClick={()=>{
-                        onClose()
-                    }}>Cancel</button>
+                    <button onClick={onClose}>Cancel</button>
                  </div>)
     }
     else{
