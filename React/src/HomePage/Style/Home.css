@@ -30,7 +30,7 @@ html {
     display: flex;
     width: 100%;
     padding: 0.8rem;
-    margin-left: 1.2rem;
+    padding-left: 1.2rem;
 }
 .Title-logo-header{
     color: var(--color-gray);
@@ -88,7 +88,7 @@ html {
 }
 .desc-panel-body1{
     width: 50%;
-    
+    text-align: center;
 }
 .desc-panel-body2{
     width: 50%;
@@ -99,4 +99,48 @@ html {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--color-bg-dark);
+}
+.panel-getStarted-home{
+    text-align: center;
+    margin-top: 2rem;
+    background-color: white;
+    padding-bottom: 3rem;
+}
+.link-getStarted-home{
+    text-decoration: none;
+    border: 2px var(--color-bg-dark) solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--color-bg-dark);
+    color: white;
+    /* width: 300px; */
+    font-family: Didact ;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}   
+.link-getStarted-home:hover{
+    background-color: white;
+    color: var(--color-bg-dark);
+}
+.home-body-container{
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+}
+.footer-container-panel{
+    background-color: var(--color-bg-dark);
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 8rem;
+    text-align: center;
+}
+.title-footer-text{
+    font-family: Didact;
+    margin-top: 2rem;
+    color: white;
 }
