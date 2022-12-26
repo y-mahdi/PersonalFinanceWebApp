@@ -62,14 +62,17 @@ html {
 /*add pop up*/
 
 .addspend-pop-up{
-    position: fixed;
+    /* position: relative;
     top: 70px;
-    border-radius: 40px;
-    min-height: 500px;
-    width: 400px;
+    border-radius: 40px; */
+    text-align: right;
+    min-height: 400px;
+    /* width: 400px; */
+    justify-content: end;
+    width: 100%;
     right: 0.8%;
-    background-color:white;
-    box-shadow: 1px 0.5px 1px 1px var(--color-gray);
+    /* background-color:white; */
+    /* box-shadow: 1px 0.5px 1px 1px var(--color-gray); */
 }
 .addspend-pop-up{
     font-family: Didact;
