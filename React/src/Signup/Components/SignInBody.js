@@ -6,6 +6,7 @@ export default function SignInBody() {
             <input type={'text'} placeholder="First Name" /><br />
             <input type={'text'} placeholder="Last Name" /><br />
             <input type={'text'} placeholder="Username" /><br />
+            <input type={'email'} placeholder="email" /><br />
             <input type={'password'} placeholder="Password" /><br />
             <input type={'password'} placeholder="Re-write Password" /><br />
             <button>SignIn</button>

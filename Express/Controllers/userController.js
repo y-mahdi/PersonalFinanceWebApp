@@ -1,0 +1,58 @@
+
+const userModel=require("../Models/UserModel");
+
+module.exports.addUser=(req,res,next)=>{
+    userModel.create(req.body).then((data)=>{
+        res.send(data)
+    }).catch(e=>{
+        res.send(JSON.stringify(e))
+    })
+    next();
+}
+module.exports.existUsername=(req,res,next)=>{
+    if(userModel.find({username:req.body.username}).count()>=1){
+        res.send(JSON.stringify({exist:true}))
+    }
+    else{
+        res.send(JSON.stringify({exist:false}))
+    }
+    next();
+}
+
+module.exports.updatePassword=(req,res,next)=>{
+    userModel.findByIdAndUpdate(req.body.id,{password:req.body.password},(err,docs)=>{
+        if(err){
+            console.log(err);
+            res.send(JSON.stringify({updated:false}))
+        }
+        else{
+            console.log("updated",docs)
+            res.send(JSON.stringify({updated:true}))
+        }
+    })
+    next();
+}
+module.exports.Login=(req,res,next)=>{
+    if(userModel.find({username:req.body.username}).count()==0){
+        res.send(JSON.stringify({
+            info:false
+        }))
+        next();
+    }
+    else{
+        userModel.findOne({username:req.body.username}).then((data)=>{
+            if(data.password==req.body.password){
+                res.send(JSON.stringify({
+                    info:true,
+                    id:data._id
+                }))
+            }
+            else{
+                res.send(JSON.stringify({
+                    info:false
+                }))
+            }
+        })
+    }
+    next();
+}
